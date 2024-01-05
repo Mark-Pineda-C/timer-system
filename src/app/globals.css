@@ -2,26 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.login-background {
+  background-color: #fff7c9;
+  opacity: 0.7;
+  background-image: radial-gradient(#9f8f37 0.9px, #fffbe7 0.9px);
+  background-size: 35px 35px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.dark .login-background {
+  background-color: #172554;
+  opacity: 0.7;
+  background-image: radial-gradient(#365de0 0.9px, #172554 0.9px);
+  background-size: 35px 35px;
+}
+
+@media (min-width: 768px) {
+  .login-background {
+    background-size: 30px 30px;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }

@@ -1,0 +1,16 @@
+{
+  "Index": {
+    "title": "Welcome to the Index page"
+  },
+  "Login": {
+    "title": "Login",
+    "subtitle": "Enter your credentials to log in to the system"
+  },
+  "Common": {
+    "locales": {
+      "en": "English",
+      "es": "Spanish"
+    }
+  }
+}
+

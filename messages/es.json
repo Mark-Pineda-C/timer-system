@@ -1,0 +1,16 @@
+{
+  "Index": {
+    "title": "Bienvenido a la aplicación de ejemplo de React"
+  },
+  "Login": {
+    "title": "Iniciar sesión",
+    "subtitle": "Ingresa tus credenciales para ingresar al sistema"
+  },
+  "Common": {
+    "locales": {
+      "en": "Inglés",
+      "es": "Español"
+    }
+  }
+}
+
