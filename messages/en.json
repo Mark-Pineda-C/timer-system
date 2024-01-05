@@ -3,8 +3,10 @@
     "title": "Welcome to the Index page"
   },
   "Login": {
-    "title": "Login",
-    "subtitle": "Enter your credentials to log in to the system"
+    "title": "Sign In",
+    "subtitle": "Enter your credentials to log in to the system",
+    "user": "User",
+    "password": "Password"
   },
   "Common": {
     "locales": {

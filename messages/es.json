@@ -4,7 +4,9 @@
   },
   "Login": {
     "title": "Iniciar sesión",
-    "subtitle": "Ingresa tus credenciales para ingresar al sistema"
+    "subtitle": "Ingresa tus credenciales para ingresar al sistema",
+    "user": "Usuario",
+    "password": "Contraseña"
   },
   "Common": {
     "locales": {
