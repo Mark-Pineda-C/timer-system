@@ -21,3 +21,14 @@
     background-size: 30px 30px;
   }
 }
+
+
+.splash-background {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.005) 0%, rgba(255, 255, 255, 0.3) 100%);
+}
+
+.dark .splash-background {
+  background: rgb(23, 37, 84);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.0025) 0%, rgba(0, 0, 0, 0.125) 100%);
+}

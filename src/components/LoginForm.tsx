@@ -9,16 +9,14 @@ export const LoginForm = () => {
   const [visible, setVisible] = useState(false);
   const t = useTranslations('Login');
   return (
-    <div className="py-5 flex flex-col w-full">
-      <Input label={t('user')} className="w-full" variant="underlined" color="primary" endContent={
-        <MaterialSymbolsPersonRounded className="text-xl text-primary-500"/>
-      }/>
+    <form className="py-5 flex flex-col w-full lg:py-20">
+      <Input label={t('user')} className="w-full" variant="underlined" color="primary"/>
       <Input className="w-full" label={t('password')} variant="underlined" color="primary" type={visible ? "default" : "password"} endContent={
-        <button onClick={() => setVisible(!visible)}>
-          {visible ? <MaterialSymbolsLockOpenRight className="text-lg text-primary-500"/> : <MaterialSymbolsLock className="text-lg text-primary-500"/>}
-        </button>
+        <Button onClick={() => setVisible(!visible)} isIconOnly variant="light">
+          {visible ? <MaterialSymbolsLockOpenRight className="text-lg text-primary-500 dark:text-amber-100"/> : <MaterialSymbolsLock className="text-lg text-primary-500 dark:text-amber-100"/>}
+        </Button>
       }/>
       <Button className="mt-10" color="primary">{t('title')}</Button>
-    </div>
+    </form>
   )
 }

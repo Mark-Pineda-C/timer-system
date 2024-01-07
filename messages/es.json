@@ -13,6 +13,12 @@
       "en": "Inglés",
       "es": "Español"
     }
+  },
+  "Metadata": {
+    "login": {
+      "title": "Inicio de sesión",
+      "description": "iniciar sesion para ingresar al sistema"
+    }
   }
 }
 

@@ -13,6 +13,12 @@
       "en": "English",
       "es": "Spanish"
     }
+  },
+  "Metadata": {
+    "login": {
+      "title": "Login Page",
+      "description": "Sign In to access the timer system"
+    }
   }
 }
 

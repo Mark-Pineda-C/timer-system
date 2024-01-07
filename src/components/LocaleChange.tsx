@@ -23,7 +23,7 @@ export const LocaleChange = () => {
           <MaterialSymbolsLanguage className="text-xl"/>
         </Button>
       </DropdownTrigger>
-      <DropdownMenu variant="light" color="default" aria-label="Seleccion de idioma">
+      <DropdownMenu variant="flat" color="default" aria-label="Seleccion de idioma">
         <DropdownItem key="es" onClick={setLocale('en')}>
           {t('locales.en')}
         </DropdownItem>
