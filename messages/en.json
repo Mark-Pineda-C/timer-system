@@ -6,19 +6,38 @@
     "title": "Sign In",
     "subtitle": "Enter your credentials to log in to the system",
     "user": "User",
-    "password": "Password"
+    "password": "Password",
+    "errors": {
+      "no_username": "Enter your username!",
+      "no_password": "Enter your password!",
+      "unknown": "An unexpected error occurred: {error}",
+      "no_user": "User does not exist!",
+      "failed_login": "Password is incorrect!",
+      "no_profile": "This user does not have access to the system"
+    }
   },
   "Common": {
     "locales": {
       "en": "English",
       "es": "Spanish"
-    }
+    },
+    "sign_out": "An error occurred while logging out: {error}"
   },
   "Metadata": {
     "login": {
       "title": "Login Page",
       "description": "Sign In to access the timer system"
+    },
+    "admin_dashboard": {
+      "title": "Admin | Home",
+      "description": "Home page for the admin dashboard"
+    },
+    "user_dashboard": {
+      "title": "Home",
+      "description": "home page for user dashboard"
     }
+  },
+  "AdminDashboard": {
+    "title": "Home page for the admin dashboard"
   }
 }
-

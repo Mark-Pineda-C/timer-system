@@ -17,7 +17,7 @@
 }
 
 @media (min-width: 768px) {
-  .login-background {
+  .login-background, .dark .login-background {
     background-size: 30px 30px;
   }
 }

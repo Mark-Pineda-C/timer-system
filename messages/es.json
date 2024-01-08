@@ -6,19 +6,38 @@
     "title": "Iniciar sesión",
     "subtitle": "Ingresa tus credenciales para ingresar al sistema",
     "user": "Usuario",
-    "password": "Contraseña"
+    "password": "Contraseña",
+    "errors": {
+      "no_username": "Ingrese su nombre de usuario!",
+      "no_password": "Ingrese su contraseña!",
+      "unknown": "Ocurrio un error inesperado: {error}",
+      "no_user": "El usuario no existe!",
+      "failed_login": "la Contraseña es incorrecta!",
+      "no_profile": "Este usuario no tiene acceso al sistema"
+    }
   },
   "Common": {
     "locales": {
       "en": "Inglés",
       "es": "Español"
-    }
+    },
+    "sign_out": "ocurrio un error al cerrar sesion: {error}"
   },
   "Metadata": {
     "login": {
       "title": "Inicio de sesión",
       "description": "iniciar sesion para ingresar al sistema"
+    },
+    "admin_dashboard": {
+      "title": "Admin | Inicio",
+      "description": "Pagina inicial para el dashboard de admin"
+    },
+    "user_dashboard": {
+      "title": "Inicio",
+      "description": "pagina de inicio para el dashboard de usuarios"
     }
+  },
+  "AdminDashboard": {
+    "title": "Pagina de inicio para el dashboard del admin"
   }
 }
-

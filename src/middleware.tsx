@@ -1,17 +1,17 @@
 import createMiddleware from 'next-intl/middleware';
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from './utils/middleware';
-import { getLocale } from 'next-intl/server';
  
 export async function middleware (req: NextRequest){
   // const locale = await getLocale()
-  const locale = req.cookies.get('NEXT_LOCALE')!.value
+  const locale = req.cookies.get('NEXT_LOCALE') ? req.cookies.get('NEXT_LOCALE')?.value : 'es';
   try {
     const { supabase, response } = createClient(req);
     const {data, error } = await supabase.auth.getSession()
     if (error) throw new Error(error.message)
     const {session} = data
-    if (session) {
+    console.log(session?.user.user_metadata)
+    if (session && req.nextUrl.pathname === '/') {
       return NextResponse.redirect('/');
     }
     if(session === null && (!req.nextUrl.pathname.match(/\/(es|en)\/auth\/(login|recover)/))) {

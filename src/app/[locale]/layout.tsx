@@ -5,6 +5,7 @@ import { Providers } from '@/providers'
 import { locales } from '@/i18n'
 import {unstable_setRequestLocale} from 'next-intl/server';
 import {NextIntlClientProvider, useMessages} from 'next-intl';
+import { Toaster } from 'react-hot-toast';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         <Providers>
           <NextIntlClientProvider messages={messages}>
             {children}
+            <Toaster toastOptions={{className: 'dark:!bg-neutral-800 dark:!text-white'}}/>
           </NextIntlClientProvider>
         </Providers>
       </body>

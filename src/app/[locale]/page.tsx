@@ -1,6 +1,16 @@
 import Image from 'next/image'
 import {useTranslations} from 'next-intl';
-import {unstable_setRequestLocale} from 'next-intl/server';
+import {getTranslations, unstable_setRequestLocale} from 'next-intl/server';
+import { Metadata } from 'next';
+
+export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
+  const t = await getTranslations({locale});
+ 
+  return {
+    title: t('Metadata.user_dashboard.title'),
+    description: t('Metadata.user_dashboard.description')
+  };
+}
 
 export default function Home({params: {locale}}: {params: {locale: string}}) {
   unstable_setRequestLocale(locale);

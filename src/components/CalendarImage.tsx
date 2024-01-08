@@ -11,9 +11,9 @@ export const CalendarImage = () => {
   return(
     <>
       {theme === 'dark' ? (
-        <Image src={ClaendarDark} alt="calendar" width={450} height={350} className="w-64 xl:w-[400px]"/>
+        <Image src={ClaendarDark} alt="calendar" width={450} height={350} className="w-64 xl:w-[400px]" priority/>
       ) : (
-        <Image src={ClaendarLight} alt="calendar" width={450} height={350} className="w-64 xl:w-[400px]"/>
+        <Image src={ClaendarLight} alt="calendar" width={450} height={350} className="w-64 xl:w-[400px]" priority/>
       ) }
     </>
   )
